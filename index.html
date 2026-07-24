@@ -37,6 +37,17 @@ Smart Billing & Business Software Solutions
     </div>
 </section>
 
+<section class="slider">
+    <img class="slide active" src="images/1.jpg">
+    <img class="slide" src="images/2.jpg">
+    <img class="slide" src="images/3.jpg">
+    <img class="slide" src="images/4.jpg">
+    <img class="slide" src="images/5.jpg">
+    <img class="slide" src="images/6.jpg">
+    <img class="slide" src="images/7.jpg">
+    <img class="slide" src="images/8.jpg">
+</section>
+
 <!-- Products -->
 <section id="products">
     <h2>Our Software Solutions</h2>
@@ -123,6 +134,17 @@ Smart Billing & Business Software Solutions
 <footer>
     <p>© 2010 Vings Solutions. All Rights Reserved.</p>
 </footer>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+}, 2500);
+</script>
 
 </body>
 </html>
