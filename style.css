@@ -402,3 +402,9 @@ footer{
         height:50px;
     }
 }
+.price{
+    color:#0066cc;
+    font-size:28px;
+    font-weight:bold;
+    margin:15px 0;
+}
