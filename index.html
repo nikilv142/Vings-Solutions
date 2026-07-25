@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vings Solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,7 +38,7 @@ Smart Billing & Business Software Solutions
     </div>
 </section>
 
-<section class="slider">
+<section class="slider" data-aos="fade-up">
     <img class="slide active" src="images/1.jpg">
     <img class="slide" src="images/2.jpg">
     <img class="slide" src="images/3.jpg">
@@ -49,7 +50,7 @@ Smart Billing & Business Software Solutions
 </section>
 
 <!-- Products -->
-<section id="products">
+<section id="products" data-aos="fade-up">
     <h2>Our Software Solutions</h2>
 
     <div class="product-container">
@@ -63,7 +64,7 @@ Smart Billing & Business Software Solutions
             <p>✔ Stock Management</p>
             <h2 class="price">₹10,000</h2>
 
-<button onclick="window.open('https://wa.me/916362886394?text=Hello%20Vings%20Solutions,%20I%20am%20interested%20in%20your%20GST%20Billing%20Software.%20Please%20share%20the%20price%20and%20features.','_blank')">
+<button onclick="window.open('https://wa.me/916362886394?text=Hello%20Vings%20Solutions,%0A%0AI%20am%20interested%20in%20your%20GST%20Billing%20Software.%20Please%20contact%20me%20to%20discuss%20the%20best%20solution%20for%20my%20business.','_blank')">
     Contact Us
 </button>
         </div>
@@ -77,7 +78,7 @@ Smart Billing & Business Software Solutions
             <p>✔ Daily Sales Reports</p>
             <h2 class="price">₹12,000</h2>
 
-<button onclick="window.open('https://wa.me/916362886394?text=Hello%20Vings%20Solutions,%20I%20am%20interested%20in%20your%20POS%20Software.%20Please%20share%20the%20price%20and%20features.','_blank')">
+<button onclick="window.open('https://wa.me/916362886394?text=Hello%20Vings%20Solutions,%0A%0AI%20am%20interested%20in%20your%20POS%20Software.%20Please%20contact%20me%20to%20discuss%20the%20best%20solution%20for%20my%20business.','_blank')">
     Contact Us
 </button>
         </div>
@@ -91,7 +92,7 @@ Smart Billing & Business Software Solutions
             <p>✔ Inventory Reports</p>
             <h2 class="price">₹5,900</h2>
 
-<button onclick="window.open('https://wa.me/916362886394?text=Hello%20Vings%20Solutions,%20I%20am%20interested%20in%20your%20Inventory%20Management%20Software.%20Please%20share%20the%20price%20and%20features.','_blank')">
+<button onclick="window.open('https://wa.me/916362886394?text=Hello%20Vings%20Solutions,%0A%0AI%20am%20interested%20in%20your%20Inventory%20Management%20Software.%20Please%20contact%20me%20to%20discuss%20the%20best%20solution%20for%20my%20business.','_blank')">
     Contact Us
 </button>
         </div>
@@ -100,7 +101,7 @@ Smart Billing & Business Software Solutions
 </section>
 <!-- Statistics Section -->
 <section class="intro">
-<section id="software-demo">
+<section id="software-demo" data-aos="zoom-in">
 <h2>Live Software Demonstration</h2>
 <p>Explore the features and functionality of our business software solution.</p>
     <video controls preload="metadata">
@@ -144,6 +145,14 @@ setInterval(() => {
     current = (current + 1) % slides.length;
     slides[current].classList.add('active');
 }, 2500);
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
 </script>
 
 </body>
