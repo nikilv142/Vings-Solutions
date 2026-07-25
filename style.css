@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 *{
     margin:0;
     padding:0;
@@ -179,11 +182,21 @@ nav ul li a:hover{
     padding:30px;
     border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+
+    transition:all .45s ease;
+    transform-style:preserve-3d;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+
+    transform:
+        perspective(1000px)
+        rotateX(5deg)
+        rotateY(-5deg)
+        translateY(-12px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.18);
+
 }
 
 .card h3{
@@ -197,17 +210,24 @@ nav ul li a:hover{
 }
 
 .card button{
-    background:#0066cc;
+    background:linear-gradient(135deg,#0066cc,#00bfff);
     color:white;
     border:none;
     padding:12px 20px;
-    border-radius:6px;
+    border-radius:8px;
     cursor:pointer;
     font-weight:bold;
+    transition:all 0.35s ease;
 }
 
 .card button:hover{
-    background:#004999;
+    transform:translateY(-4px);
+    background:linear-gradient(135deg,#0052a3,#0099ff);
+    box-shadow:0 10px 25px rgba(0,102,204,.35);
+}
+
+.card button:active{
+    transform:scale(0.96);
 }
 
 /* =========================
@@ -437,4 +457,13 @@ footer{
         height:200px;
     }
 
+}
+.card img,
+.slide{
+    transition:transform .5s ease;
+}
+
+.card:hover img,
+.slide:hover{
+    transform:scale(1.06);
 }
